@@ -22,7 +22,5 @@ You may also see any lint errors in the console.
 
 run the server to get, delete, update and add on movies data
 
-## Learn More
-
 ## Video
 https://youtu.be/TkCVd5BHGTM
