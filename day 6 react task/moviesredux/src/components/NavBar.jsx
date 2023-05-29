@@ -17,8 +17,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 // import { styled } from '@mui/material/styles';
 // import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { useDispatch } from "react-redux";
 import { searchMovie } from "../redux/actionCreator";
 
@@ -29,8 +29,8 @@ function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const theme = useTheme()
-  const IsMobile = useMediaQuery(theme.breakpoints.down("sm"))
+  const theme = useTheme();
+  const IsMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -39,9 +39,9 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-      <Link to={"/"} style={{textDecoration:"none"}}>
-          HOME 
-      </Link>
+        <Link to={"/"} style={{ textDecoration: "none" }}>
+          HOME
+        </Link>
       </Typography>
       <Divider />
       <List>
@@ -52,14 +52,14 @@ function DrawerAppBar(props) {
             </ListItemButton>
           </ListItem>
         ))} */}
-        <Link to={"/movies"} style={{textDecoration:"none" }}>
+        <Link to={"/movies"} style={{ textDecoration: "none" }}>
           <ListItem disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary="Trending" />
             </ListItemButton>
           </ListItem>
         </Link>
-        <Link to={"movies/add"} style={{textDecoration:"none" }}>
+        <Link to={"movies/add"} style={{ textDecoration: "none" }}>
           <ListItem disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary="Add" />
@@ -73,14 +73,12 @@ function DrawerAppBar(props) {
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
-
-  const dispatch = useDispatch()
-  const [word,setWord] = useState("")
-
+  const dispatch = useDispatch();
+  const [word, setWord] = useState("");
 
   const handleChange = (e) => {
     setWord(e.target.value);
-    dispatch(searchMovie(e.target.value))
+    dispatch(searchMovie(e.target.value));
   };
 
   return (
@@ -97,14 +95,14 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-         <Typography
+          <Typography
             variant="h6"
             component="div"
-            sx={{  display: { xs: "none", sm: "block" } }}
+            sx={{ display: { xs: "none", sm: "block" } }}
           >
-            <Link to={"/"} style={{textDecoration:"none", color:"white"}}>
+            <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
               HOME
-            </Link> 
+            </Link>
           </Typography>
           <Box
             sx={{
@@ -113,39 +111,47 @@ function DrawerAppBar(props) {
               alignItems: "center",
             }}
           >
-            
-           {!IsMobile && <Link to="/movies">
-              <Button sx={{
-                 color: "#fff", 
-                 "&:hover": {
-                 backgroundColor: "#fff",
-                 color: "#000"},
-                 marginLeft:"15px"
-             }}>
-          Trending
-          </Button>
-            </Link>}
-            {!IsMobile && <Link to="/movies/add">
-              <Button sx={{ 
-                color: "#fff",
-                "&:hover": {
-                  backgroundColor: "#fff",
-                  color: "#000"},
-                  margin:"10px"
-                 }}>
+            {!IsMobile && (
+              <Link to="/movies">
+                <Button
+                  sx={{
+                    color: "#fff",
+                    "&:hover": {
+                      backgroundColor: "#fff",
+                      color: "#000",
+                    },
+                    marginLeft: "15px",
+                  }}
+                >
+                  Trending
+                </Button>
+              </Link>
+            )}
+            {!IsMobile && (
+              <Link to="/movies/add">
+                <Button
+                  sx={{
+                    color: "#fff",
+                    "&:hover": {
+                      backgroundColor: "#fff",
+                      color: "#000",
+                    },
+                    margin: "10px",
+                  }}
+                >
                   Add
-                  </Button>
-            </Link>}
-            
+                </Button>
+              </Link>
+            )}
           </Box>
           <input
-              placeholder="Search"
-              type="text"
-              className="form-control"
-              style={{ width: "30%",marginLeft:"auto",marginRight:"25px" }}
-              value={word}
-              onChange={handleChange}
-            />
+            placeholder="Search"
+            type="text"
+            className="form-control"
+            style={{ width: "30%", marginLeft: "auto", marginRight: "25px" }}
+            value={word}
+            onChange={handleChange}
+          />
         </Toolbar>
       </AppBar>
       <Box component="nav">
