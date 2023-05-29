@@ -1,0 +1,60 @@
+{
+"movies":[
+    {
+        "title": "The Super Mario Bros. Movie",
+        "poster_path": "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+        "overview": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
+        "release_date": "2023-04-05",
+        "id":1
+    },
+    {
+        "title": "Fast X",
+        "poster_path": "https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg",
+        "overview": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever.",
+        "release_date": "2023-05-17",
+        "id":2
+    },
+    {
+        "title": "Evil Dead Rise",
+        "poster_path": "https://image.tmdb.org/t/p/w500/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
+        "overview": "Three siblings find an ancient vinyl that gives birth to bloodthirsty demons that run amok in a Los Angeles apartment building and thrusts them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
+        "release_date": "2023-04-12",
+        "id":3
+    },
+    {
+        "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
+        "title": "Ant-Man and the Wasp: Quantumania",
+        "release_date": "2023-02-15",
+        "poster_path": "https://image.tmdb.org/t/p/w500/A7SobaUTvb6d5Z3dpOhFxPG0RQf.jpg",
+        "id":4
+    },
+    {
+        "title": "The Pope's Exorcist",
+        "poster_path": "https://image.tmdb.org/t/p/w500/4IjRR2OW2itjQWQnmlUzvwLz9DQ.jpg",
+        "overview": "Father Gabriele Amorth, Chief Exorcist of the Vatican, investigates a young boy's terrifying possession and ends up uncovering a centuries-old conspiracy the Vatican has desperately tried to keep hidden.",
+        "release_date": "2023-04-05",
+        "id":5
+    },
+    {
+        "title": "Sisu",
+        "poster_path": "https://image.tmdb.org/t/p/w500/pnQYjDxqZ3C6reI8N0MfNi4NMkZ.jpg",
+        "overview": "Deep in the wilderness of Lapland, Aatami Korpi is searching for gold but after he stumbles upon Nazi patrol, a breathtaking and gold-hungry chase through the destroyed and mined Lapland wilderness begins.",
+        "release_date": "2023-01-27",
+        "id":6
+    },
+    {
+        "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+        "release_date": "2023-05-03",
+        "title": "Guardians of the Galaxy Vol. 3",
+        "id":7
+    },
+    {
+        "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+        "release_date": "2022-12-14",
+        "title": "Avatar: The Way of Water",
+        "id":8
+    }
+]
+}
